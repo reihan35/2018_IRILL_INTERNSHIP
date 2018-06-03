@@ -1,0 +1,15 @@
+- ByteCode : un langage intermediare qui produit du code entre langage haute niveau (comme java) et le langage machine (binaire)
+
+- VM : machine vituelle prevue pour executer le bytecode generé par un copmilateur une machine vituelle fonctionne exactement comme un processeur mais est plus éfficace dans le sens ou elle est beaucoup plus portable 
+
+- runTime : Runtime describes software/instructions that are executed while your program is running, especially those instructions that you did not write explicitly, but are necessary for the proper execution of your code.
+
+The runtime or execution environment is the part of a language implementation which executes code and is present at run-time; the compile-time part of the implementation is called the translation environment in the C standard.
+
+Examples:
+
+the Java runtime consists of the virtual machine and the standard library
+a common C runtime consists of the loader (which is part of the operating system) and the runtime library, which implements the parts of the C language which are not built into the executable by the compiler; in hosted environments, this includes most parts of the standard library
+
+it doesn't interact with your code in a general sense, it just defines in what circumstances your code works, what is available to it during execution.
+

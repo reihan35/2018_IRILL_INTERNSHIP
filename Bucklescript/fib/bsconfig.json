@@ -1,0 +1,4 @@
+{
+    "name" : "helo",
+    "sources" : { "dir" : "src"}
+}
