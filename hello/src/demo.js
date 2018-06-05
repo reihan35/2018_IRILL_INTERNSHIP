@@ -1,5 +1,5 @@
 function clicked() {
-  document.getElementById("count").innerHTML = (document.getElementById("count").innerHTML) + 1;
+  document.getElementById("count").innerHTML = (document.getElementById("count").innerHTML) ;
     return /* () */0;
   }
 

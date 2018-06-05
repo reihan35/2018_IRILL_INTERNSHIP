@@ -16,6 +16,8 @@ var Document = /* module */[];
 
 var Window = /* module */[];
 
+var Form = /* module */[];
+
 function clicked(a) {
   if (a.innerHTML === "clicked !") {
     a.innerHTML = "click me !";
@@ -26,9 +28,15 @@ function clicked(a) {
   }
 }
 
+function envoie($$this) {
+  return "<div> Welcome" + ($$this.firstname.value + (" " + ($$this.lastname.value + "</div>")));
+}
+
 exports.Event = Event;
 exports.Element = Element;
 exports.Document = Document;
 exports.Window = Window;
+exports.Form = Form;
 exports.clicked = clicked;
+exports.envoie = envoie;
 /* isEnterKey Not a pure module */

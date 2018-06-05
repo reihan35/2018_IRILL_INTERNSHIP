@@ -42,6 +42,18 @@ module Window = {
   [@bs.val] external alert : string => unit = "alert" ;
 };
 
+module Form = {
+  type it;
+  [@bs.get] external getfirstname : Element.elementT => it = "firstname";
+  [@bs.get] external getlastname :  Element.elementT => it = "lastname";
+  [@bs.get] external getvalue : it => string = "value";
+}
+
+let a = 0;
+
+let counter = 
+
+
 let clicked(a) =
   if (Element.getInnerHTML(a)=="clicked !"){
     Element.setInnerHTML(a,"click me !");
