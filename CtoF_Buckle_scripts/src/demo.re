@@ -1,5 +1,7 @@
-[@bs.send] external toString : Js.t('a) => string = "toString";
+/*[@bs.send] external toString : Js.t('a) => string = "toString";*/
 
+
+/*On définit quelques modules pour pouvoir demander des fonctions externes de manière plus propre*/
 module Event = {
   type eventT;
   let isEnterKey: eventT => bool = [%bs.raw
@@ -13,8 +15,8 @@ module Event = {
 
 module Element = {
   type elementT;
-  [@bs.set] external setInnerHTML : (elementT, string) => unit = "innerHTML";
-  [@bs.set] external setInnerHTML2 : (elementT, float) => unit = "innerHTML";
+  [@bs.set] external setInnerHTML : (elementT, string) => unit = "innerHTML"; /*On peut définir plusieurs définitions de la même fonction externe avec des typages différents */
+  [@bs.set] external setInnerHTML2 : (elementT, float) => unit = "innerHTML";/*ici j'ai définit un setInnerHTML spécialement pour les floats pour l'affichage du degré converti en °C ou en °F*/
   [@bs.get] external getInnerHTML : elementT => string = "innerHTML";
   [@bs.get] external getInnerHTML2 : elementT => float = "innerHTML";
   [@bs.set] external setValue : (elementT, string) => unit = "value";
@@ -54,11 +56,11 @@ module Form = {
 [@bs.get] external getvalue : Element.elementT => float = "value";
 
 
-let x = string_of_float(88.5);
-
-let clicked(a) =
+let clicked(a) = /*On définit les deux fonction qui seront applée au moment de click sur le bouton : */
     Element.setInnerHTML2(Document.getElementById("count"),getvalue(Document.getElementById("textF"))*.1.8+.32.0);
+    /*On récupère la valeur innerHTML de l'input saissi par l'utilisateur on la converti en °F puis on met la valeur converie à l'intérieur de la balise p */
 
+    /*On continue de la même facon pour le deuxième bouton  */
 let clicked2(a) =
     Element.setInnerHTML2(Document.getElementById("count2"),((getvalue(Document.getElementById("textF2"))-.32.0)/.1.8));
 
