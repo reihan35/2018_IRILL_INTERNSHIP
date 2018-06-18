@@ -5,7 +5,7 @@
 	<title></title>
 	<meta name="generator" content="LibreOffice 5.3.1.2 (Linux)"/>
 	<meta name="created" content="2018-06-05T10:35:56.020882407"/>
-	<meta name="changed" content="2018-06-05T15:16:48.926289539"/>
+	<meta name="changed" content="2018-06-08T15:41:51.762871513"/>
 	<style type="text/css">
 		@page { margin: 2cm }
 		p { margin-bottom: 0.25cm; line-height: 120% }
@@ -30,13 +30,14 @@ semaine </b><b>de</b><b> 2/6/</b><b>2018</b><b> :</b></p>
 <font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><b><font color="#d22b7e">Js_of_ocaml
 :</font> </b></font></font></font>
 </p>
-<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 150%">
-<br/>
-
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
+<font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt">Il
+y a deux façons différentes d’installation de  Js_of_ocaml&nbsp;:
+</font></font></font>
 </p>
 <p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
 <font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt">1-Par
-le gestionnaire de paquet Opam :</font></font></font></p>
+le gestionnaire de paquet Opam en une seule ligne de commande :</font></font></font></p>
 <p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
 <font color="#24292e"><font face="Tlwg Typist"><font size="2" style="font-size: 9pt">$
 opam install js_of_ocaml  js_of_ocaml-ppx js_of_ocaml-lwt</font></font></font></p>
@@ -62,15 +63,11 @@ js_of_ocaml-ppx opam-installer js_of_ocaml-lwt</span></span></span></font></font
 <p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 150%">
 <font color="#00a800"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><b>Obrowser
 :</b></font></font></font></p>
-<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 150%">
-<br/>
-
-</p>
 <p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
 <font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span lang="fr-FR">Il
-faut d</span><span lang="fr-FR">’abord </span><span lang="fr-FR">passer</span>
-la commande suivante Afin de changer la version de Caml avec la bonne
-version de Ocaml dans le terminal :</font></font></font></p>
+faut d</span><span lang="fr-FR">’abord </span><span lang="fr-FR">marquer</span>
+la commande suivante afin de changer la version de Ocaml avec la
+bonne version de Ocaml dans le terminal :</font></font></font></p>
 <pre class="western" style="border: none; padding: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%; orphans: 2; widows: 2; background: #f6f8fa"><font color="#26282a"><font face="Tlwg Typist"><font size="2" style="font-size: 9pt">$ opam switch 3.0.1</font></font></font></pre><p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
 <font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt">Puis
 on peut l’installer  :</font></font></font></p>
@@ -89,8 +86,9 @@ la source :</font></font></font></p>
 <p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
 <font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt">Si
 le paquet<font face="Tlwg Typist"> sharutils</font> n’est pas
-installé on l’installe , il faut en suite récupérer le dossier
-sur le site puis depuis le répertoire de base on passe la commande :</font></font></font></p>
+installé on l’installe , il faut puis récupérer le dossier sur
+le site après cela depuis le répertoire de base on passe la
+commande :</font></font></font></p>
 <p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
 <font color="#26282a"><font face="Tlwg Typist"><font size="2" style="font-size: 9pt">make</font></font></font></p>
 <p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
@@ -100,35 +98,27 @@ sur le site puis depuis le répertoire de base on passe la commande :</font></fo
 <p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 150%">
 <font color="#3f3fbe"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><b>BuckleScripts
 :</b></font></font></font></p>
-<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 150%">
-<br/>
-
-</p>
 <p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
 <font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span lang="fr-FR">Il
-faut d</span><span lang="fr-FR">’abord </span><span lang="fr-FR">passer</span>
-la commande suivante Afin de changer la version de Caml avec la bonne
-version de Ocaml dans le terminal :</font></font></font></p>
+faut d</span><span lang="fr-FR">’abord </span><span lang="fr-FR">marquer</span>
+la commande suivante afin de changer la version de Ocaml avec la
+bonne version de Ocaml dans le terminal :</font></font></font></p>
 <pre class="western" style="border: none; padding: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%; orphans: 2; widows: 2; background: #f6f8fa"><font color="#26282a"><font face="Tlwg Typist"><font size="2" style="font-size: 9pt">$ opam switch 4.02.3+buckle-1</font></font></font></pre><p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
-<font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt">Par
-la suite Il y a deux façons : </font></font></font>
+<font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt">Puis
+Il y a deux manières de procéder l’installation : </font></font></font>
 </p>
 <p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
 <font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt">1-
 Par le gestionnaire de paquet npm :</font></font></font></p>
 <p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
 <font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt">Si
-npm n’est pas déjà installé sur la machine on procède
-l’installation en créent  un compte sur le site <span style="text-decoration: none">npmjs.com
+npm n’est pas déjà installé sur la machine on commence
+l’installation en créent  un compte sur le site <u>npmjs.com</u><span style="text-decoration: none">
 </span><span style="text-decoration: none">puis on passe les commande
 :</span></font></font></font></p>
 <pre class="western" style="line-height: 150%; text-align: left"><span style="display: inline-block; border: none; padding: 0cm"><span style="font-variant: normal"><font color="#26282a"><font face="Tlwg Typist"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="text-decoration: none"><span style="font-weight: normal"><code class="western">$ </span></span></span></span></font></font></font></span></code><span style="font-variant: normal"><font color="#26282a"><font face="Tlwg Typist"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="text-decoration: none"><span style="font-weight: normal"><code class="western">curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -</span></span></span></span></span></font></font></font></span></code></pre><p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
 <font color="#26282a"><font face="Tlwg Typist"><font size="2" style="font-size: 9pt">$
 sudo apt-get install -y nodejs</font></font></font></p>
-<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%; text-decoration: none">
-<br/>
-
-</p>
 <p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
 <font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="text-decoration: none">une</span>
 fois installé il faut d’abord créer un compte sur le site de npm
@@ -140,23 +130,27 @@ puis passer la commande : </font></font></font>
 install -g bs -platforme</font></font></font></font></font></p>
 <p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
 <font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt">On
-passa la commande suivante pour s’assuerer que l’installation a
-été bien realisée :</font></font></font></p>
+marque la commande suivante pour s’assurer que l’installation a
+été bien réalisée :</font></font></font></p>
 <p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
 <font color="#24292e"><font face="Tlwg Typist"><font size="2" style="font-size: 9pt">$
 node -v</font></font></font></p>
 <p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
 <font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt">la
-version doit être  v8.9.1 ou plus .</font></font></font></p>
+version doit être  v8.9.1 ou plus.</font></font></font></p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
+<font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt">En
+fin afin d’installer BuckleScript on marque : </font></font></font>
+</p>
 <pre class="western" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%; text-align: left"><font color="#24292e"><font face="Tlwg Typist"><font size="2" style="font-size: 9pt">$ npm install --save bs-platform</font></font></font></pre><p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
 <font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt">2-
 Par le gestionnaire de paquet nvm (recommandé si npm n’est pas
-installé car plus facile) :</font></font></font></p>
+installé ) :</font></font></font></p>
 <p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
 <font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt">Pour
-cela il suffit de suivre les insruction sur :
+cela il suffit de suivre les instructions sur :
 <a href="https://github.com/creationix/nvm">https://github.com/creationix/nvm</a>
-afin d’istaller le  pacquet nvm en suite on pourra directement
+dans le but d’installer le paquet nvm puis on pourra directement
 passer la commande suivante afin d’installer </font></font></font>
 </p>
 <p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
@@ -172,17 +166,19 @@ passer la commande suivante afin d’installer </font></font></font>
 <p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 150%">
 <font color="#d22b7e"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><b>Js_of_ocaml
 :</b></font></font></font></p>
-<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 150%">
-<br/>
-
-</p>
 <p align="left" style="margin-bottom: 0cm; line-height: 150%"><span style="font-variant: normal"><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Il
 n’y a pas vraiment de documentation sur le site de la source </span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">mais
 un m</span></span></span></font></font></font></span><span style="display: inline-block; border: none; padding: 0cm"><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span lang="fr-FR"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">anuel
 de référence </span></span></span></span></font></font></font></span><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span lang="fr-FR"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">expliquant
-assez brievement le syntax </span></span></span></span></font></font></font></span><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span lang="fr-FR"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">de
+assez </span></span></span></span></font></font></font></span><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span lang="fr-FR"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">brièvement</span></span></span></span></font></font></font></span><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span lang="fr-FR"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">
+l</span></span></span></span></font></font></font></span><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span lang="fr-FR"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">a</span></span></span></span></font></font></font></span><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span lang="fr-FR"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">
+</span></span></span></span></font></font></font></span><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span lang="fr-FR"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">syntaxe</span></span></span></span></font></font></font></span><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span lang="fr-FR"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">
+</span></span></span></span></font></font></font></span><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span lang="fr-FR"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">,</span></span></span></span></font></font></font></span><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span lang="fr-FR"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">de
 plus l</span></span></span></span></font></font></font></span><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span lang="fr-FR"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">e
-manque d’un tuorat pour expliquer le synatx pas à pas </span></span></span></span></font></font></font></span><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span lang="fr-FR"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">avec
+manque d’un </span></span></span></span></font></font></font></span><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span lang="fr-FR"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">tutorat</span></span></span></span></font></font></font></span><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span lang="fr-FR"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">
+pour expliquer l</span></span></span></span></font></font></font></span><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span lang="fr-FR"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">a</span></span></span></span></font></font></font></span><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span lang="fr-FR"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">
+</span></span></span></span></font></font></font></span><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span lang="fr-FR"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">syntaxe</span></span></span></span></font></font></font></span><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span lang="fr-FR"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">
+pas à pas </span></span></span></span></font></font></font></span><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span lang="fr-FR"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">avec
 des exemple</span></span></span></span></font></font></font></span><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span lang="fr-FR"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">s</span></span></span></span></font></font></font></span><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span lang="fr-FR"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">
 </span></span></span></span></font></font></font></span><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span lang="fr-FR"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">semblerait
 donc de</span></span></span></span></font></font></font></span><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span lang="fr-FR"><span style="font-style: normal"><span style="font-weight: normal"><span style="font-variant: normal">
@@ -196,10 +192,6 @@ en ligne.</span></span></span></span></span></font></font></font></span></p>
 <p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 150%">
 <font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><b><font color="#00a800">Obrowser&nbsp;:</font>
 </b></font></font></font>
-</p>
-<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
-<br/>
-
 </p>
 <p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
 <span style="display: inline-block; border: none; padding: 0cm"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><font color="#26282a">La
@@ -216,16 +208,12 @@ tutorat en .html qui accélère le progrès de l’apprentissage. </span></font>
 <font color="#3f3fbe"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><b>BuckleScripts
 :</b></font></font></font></p>
 <p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
-<br/>
-
-</p>
-<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
 <font color="#555555"><font face="Liberation Serif, serif"><font size="3" style="font-size: 12pt"><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt">BuckleScripts
 a la meilleure documentation par rapport aux méthodes mentionnées
 avant.Elle se trouve sur le site de BuckleScripts à l’adresse
 </font></font></font><a href="https://reasonml.github.io/docs/en/interop.html">https://reasonml.github.io/docs/en/interop.html</a><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt">
 </font></font></font><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt">malgré
-cela le manque des exemples (hormis celui fournis avec le tout
+cela le manque d’exemples (hormis celui fournis avec le tout
 premier projet ) pourrait </font></font></font><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt">être</font></font></font><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt">
 un désavantage.I</font></font></font><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt">l
 faut aussi noter qu’il existe bien plus de projet BuckleScript en
@@ -240,18 +228,10 @@ ligne écrit en langage Reason qu’en Ocaml.</font></font></font></font></font>
 <p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 150%">
 <font color="#d22b7e"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><b>Js_of_ocaml
 :</b></font></font></font></p>
-<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 150%">
-<br/>
-
-</p>
 <p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
 <font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt">Pour
 compiler le fichier .ml il suffit d’exécuter la commande suivante
 : </font></font></font>
-</p>
-<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
-<br/>
-
 </p>
 <p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
 <font color="#24292e"><font face="Tlwg Typist"><font size="2" style="font-size: 9pt">$
@@ -259,16 +239,11 @@ ocamlfind ocamlc -package js_of_ocaml -package js_of_ocaml-ppx
 -linkpkg -o exemple.byte exemple.ml</font></font></font></p>
 <p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
 <font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt">Puis
-on .. pour construire le fichier javaScript&nbsp;: </font></font></font>
-</p>
+pour construire le fichier javaScript&nbsp;:</font></font></font></p>
 <pre class="western" style="line-height: 150%; text-align: left"><span style="font-variant: normal"><font color="#24292e"><font face="Tlwg Typist"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">$ js_of_ocaml exemple.byte</span></span></span></font></font></font></span>
 </pre><p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
 <font color="#00a800"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><b>Obrowser</b>
 :</font></font></font></p>
-<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
-<br/>
-
-</p>
 <p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
 <font color="#000000"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt">Il
 suffit d’exécuter la commande : <br/>
@@ -278,10 +253,11 @@ exemple.exe stdout &gt; exemple.exe.uue </font></font></font></font></font>
 </p>
 <p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
 <font color="#000000"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt">Il
-faut ensuite copier le fichier vm.js dans le même dossier que le
-fichier .exe.uue et on peur en suite visulaiser la page .html que
-l’on avait déjà mis dans le même dossier. </font></font></font>
-</p>
+faut après cela copier le fichier vm.js dans le même dossier que le
+fichier .exe.uue et on peut par conséquent visualiser la page .html
+que l’on avait déjà placé dans le même dossier. Si cette
+méthode renvoie une erreur le plus simple serait de remplacer le
+code des exemples donnés par votre propre code.</font></font></font></p>
 <p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
 <br/>
 
@@ -291,31 +267,208 @@ l’on avait déjà mis dans le même dossier. </font></font></font>
 :</b></font></font></font></p>
 <p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
 <font color="#000000"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt">Une
-fois que l’on est dans le dossier src il suffit de passer la
-commande : </font></font></font>
-</p>
+fois que l’on est dans le dossier src d’un projet Bs  il suffit
+de marquer la commande suivante pour compiler et générer le fichier
+JavaScript en même temps&nbsp;:</font></font></font></p>
 <p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
 <font color="#24292e"><font face="Tlwg Typist"><font size="2" style="font-size: 9pt">$
 npm run build </font></font></font>
 </p>
 <p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
-<font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><font color="#000000">pour
-compiler et </font><font color="#000000">générer</font><font color="#000000">
-le fichier </font><font color="#000000">JavaScript</font><font color="#000000">
-en </font><font color="#000000">même</font><font color="#000000">
-temps En BS on peut aussi profiter de la compilation à la volet </font><font color="#000000">avec
+<font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><font color="#000000">En
+BS on peut aussi profiter de la compilation à la volet </font><font color="#000000">avec
 </font><font color="#000000">:</font></font></font></p>
 <p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
 <font color="#24292e"><font face="Tlwg Typist"><font size="2" style="font-size: 9pt">$
 npm run watch</font></font></font></p>
 <p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
-<font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt">En
-résumé : </font></font></font>
-</p>
-<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
 <br/>
 
 </p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 150%">
+<font color="#000040"><font face="Liberation Serif, serif"><font size="4" style="font-size: 15pt"><b>D)Interopérabilité
+: </b></font></font></font>
+</p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 150%">
+<br/>
+
+</p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 150%">
+<img src="week_1_html_ae4fe54d2d484e9e.jpg" name="Image1" align="left" width="351" height="269" border="0"/>
+<font color="#d22b7e"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><b>Js_of_ocaml&nbsp;:
+</b></font></font></font>
+</p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%"><a name="firstHeading"></a>
+<font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt">Js_of_ocaml.ml
+est un bibliothèque de module ocaml et chacun de ces module contient
+un ensemble de concepts (objets , méthodes , valeurs etc …)
+permettant de manipuler une partie d’une page web grâce aux
+fonctions JavaScript, On peut prendre le cas de la fonction
+javaScript <font color="#24292e"><font face="Tlwg Typist">alert</font></font><font color="#24292e"><font face="Tlwg Typist">()</font></font>
+pour illustrer cette architecture cette fonction est implémentée en
+une méthode de l’objet window du module Dom, un module qui
+manipule les <span lang="en-US">Document Object Model :</span></font></font></font></p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
+<font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><font color="#24292e"><font face="Tlwg Typist"><span lang="en-US">o</span></font></font><font color="#24292e"><font face="Tlwg Typist"><span lang="en-US">pen
+Js_of_ocaml</span></font></font></font></font></font></p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
+<font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><font color="#24292e"><font face="Tlwg Typist"><span lang="en-US">window##alert(Js.string
+&quot;hello&quot;</span></font></font><font color="#24292e"><font face="Tlwg Typist"><span lang="en-US">)</span></font></font></font></font></font></p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 150%">
+<br/>
+
+</p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 150%">
+<font color="#d22b7e"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><b><font color="#00a800">Obrowser</font></b><font color="#00a800"><span style="font-weight: normal">
+:</span></font></font></font></font></p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
+<font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt">Obrowser
+possède une syntaxe assez proche de celle de Js_of_ocaml mais elle
+est encore plus simplifiée ,plus d’objets&nbsp;: l’auteur a
+choisit la simplicité et la lisibilité contre la complétude des
+fonction javaScript.Résultat&nbsp;: l’équivalent du bout de code
+précédent ici se résume en  :</font></font></font></p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
+<font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><font color="#24292e"><font face="Tlwg Typist">o</font></font><font color="#24292e"><font face="Tlwg Typist">pen
+Js</font></font></font></font></font></p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
+<font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><font color="#24292e"><font face="Tlwg Typist">alert
+&quot;hello&quot;</font></font></font></font></font></p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
+<font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt">Il
+ne faut tout d même pas oublier qu’il existe plus de modules en
+Obrowser qu’en js_of_ocaml car ce dernier implémente aussi quelque
+modules Ocaml importants tel que Graphics ou encore Lwt le module des
+threads pour faire de la concurrence.  </font></font></font>
+</p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 150%">
+<br/>
+
+</p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; line-height: 150%">
+<font color="#3f3fbe"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><b>BuckleScripts
+:</b></font></font></font></p>
+<p align="left" style="margin-bottom: 0cm; line-height: 150%"><span style="font-variant: normal"><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Bs
+a une syntaxe un peu différente de </span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">
+</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">Js_of_Ocaml
+et O’browser car avec ce langage on n’utilise plus de module Js
+mais il sera nécessaire de définir chaque fonction de la
+bibliothèque javaScript que l’on souhaite utiliser en utilisant le
+mot clé </span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#24292e"><font face="Tlwg Typist"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">external
+</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">par
+exemple</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">
+l’exemple de </span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#24292e"><font face="Tlwg Typist"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">alert()
+</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">se
+traduit par l</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">e
+bout de code</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">
+suivant en BuckleScripts&nbsp;:</span></span></span></font></font></font></span><span style="font-variant: normal"><font color="#24292e"><font face="Tlwg Typist"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">
+</span></span></span></font></font></font></span>
+</p>
+<p align="left" style="margin-bottom: 0cm; line-height: 150%"><span style="font-variant: normal"><font color="#24292e"><font face="Tlwg Typist"><font size="2" style="font-size: 9pt"><span style="letter-spacing: normal"><span style="font-style: normal"><span style="font-weight: normal">type
+dom;;</span></span></span></font></font></font></span></p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
+<font color="#24292e"><font face="Tlwg Typist"><font size="2" style="font-size: 9pt">external
+dom: dom = &quot;document&quot; [@@bs.val]</font></font></font></p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
+<font color="#24292e"><font face="Tlwg Typist"><font size="2" style="font-size: 9pt">external
+alert: string -&gt; unit = &quot;alert&quot; [@@bs.send]</font></font></font></p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
+<font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt">Puis
+on utilise la fonction que l’on vient de définir&nbsp;:</font></font></font></p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
+<font color="#24292e"><font face="Tlwg Typist"><font size="2" style="font-size: 9pt">alert
+&quot;hello&quot;</font></font></font></p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
+<font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt">Une
+autre différence de BS est la possibilité de mettre en place des
+fragments JS avec le mot clé&nbsp; <font color="#24292e"><font face="Tlwg Typist">%raw</font></font>
+bien que cette dernière soit un peu en contrariant avec l’esprit
+typage qui est tout l’intérêt de faire coopérer Js et Ocaml, il
+faut tout de même noter qu’il pourrait être une grande aide pour
+les novices qui ont des bases en JavaScript.</font></font></font></p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
+<br/>
+
+</p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
+<br/>
+
+</p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
+<br/>
+
+</p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
+<br/>
+
+</p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
+<br/>
+
+</p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
+<br/>
+
+</p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
+<br/>
+
+</p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
+<br/>
+
+</p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
+<br/>
+
+</p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
+<br/>
+
+</p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
+<br/>
+
+</p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
+<br/>
+
+</p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
+<br/>
+
+</p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
+<br/>
+
+</p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
+<br/>
+
+</p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
+<br/>
+
+</p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
+<br/>
+
+</p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
+<br/>
+
+</p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
+<br/>
+
+</p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
+<br/>
+
+</p>
+<p align="left" style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 150%">
+<font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt">En
+resumé&nbsp;: (chaque étoile vaut un point sur 5 )</font></font></font></p>
 <table width="636" cellpadding="4" cellspacing="0">
 	<col width="149">
 	<col width="153">
@@ -487,7 +640,7 @@ résumé : </font></font></font>
 		</td>
 		<td width="152" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
 			<p align="center" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
-			<font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt">?</font></font></font></p>
+			<font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt">Non</font></font></font></p>
 		</td>
 		<td width="148" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
 			<p align="center" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
@@ -495,7 +648,7 @@ résumé : </font></font></font>
 		</td>
 	</tr>
 	<tr valign="top">
-		<td width="149" height="24" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+		<td width="149" height="25" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
 			<p align="center" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
 			<font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt">Maintenance</font></font></font></p>
 		</td>
@@ -512,13 +665,32 @@ résumé : </font></font></font>
 			<font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt">***</font></font></font></p>
 		</td>
 	</tr>
+	<tr valign="top">
+		<td width="149" height="24" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p align="center" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+			<font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt">Facilité
+			de la syntaxe</font></font></font></p>
+		</td>
+		<td width="153" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p align="center" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+			<font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt">***</font></font></font></p>
+		</td>
+		<td width="152" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: none; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0cm">
+			<p align="center" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+			<font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt">****</font></font></font></p>
+		</td>
+		<td width="148" style="border-top: none; border-bottom: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; padding-top: 0cm; padding-bottom: 0.1cm; padding-left: 0.1cm; padding-right: 0.1cm">
+			<p align="center" style="font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal">
+			<font color="#26282a"><font face="Helvetica Neue, Helvetica, Arial, sans-serif"><font size="2" style="font-size: 9pt">**</font></font></font></p>
+		</td>
+	</tr>
 </table>
 <p style="margin-bottom: 0cm; font-variant: normal; letter-spacing: normal; font-style: normal; font-weight: normal; line-height: 100%">
 <br/>
 
 </p>
 <div title="footer">
-	<p style="margin-top: 0.5cm; margin-bottom: 0cm; line-height: 100%"><sdfield type=PAGE subtype=RANDOM format=PAGE>4</sdfield></p>
+	<p style="margin-top: 0.5cm; margin-bottom: 0cm; line-height: 100%"><sdfield type=PAGE subtype=RANDOM format=PAGE>5</sdfield></p>
 </div>
 </body>
 </html>

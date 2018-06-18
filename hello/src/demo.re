@@ -49,14 +49,10 @@ module Form = {
   [@bs.get] external getvalue : it => string = "value";
 }
 
-let a = 0;
-
-let counter = 
-
-
 let clicked(a) =
-  if (Element.getInnerHTML(a)=="clicked !"){
-    Element.setInnerHTML(a,"click me !");
+  if (Element.getInnerHTML(a)=="convertis !"){
+    Window.alert(88);
+    Element.setInnerHTML(a,"j'ai converit");
   }else{
-    Element.setInnerHTML(a,"clicked !");
+    Element.setInnerHTML(a,"j'ai converti !");
   };

@@ -1,0 +1,4 @@
+lwt_preemptive.cmo: lwt_preemptive.cmi
+lwt_preemptive.cmx: lwt_preemptive.cmi
+lwt_obrowser.cmo: lwt_preemptive.cmi lwt_obrowser.cmi
+lwt_obrowser.cmx: lwt_preemptive.cmx lwt_obrowser.cmi
