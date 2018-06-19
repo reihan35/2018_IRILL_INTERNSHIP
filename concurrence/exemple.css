@@ -65,13 +65,25 @@
 }
 
 
+
+#nbr1 {
+    margin-left: -26px;
+    margin-top: 0.5cm;
+}
+
+#nbr2 {
+    margin-left: -26px;
+    margin-top: 0.5cm;
+}
+
+
 #count {
-    margin-left: 30px;
+    margin-left: 50px;
     margin-top: 0.5cm;
 }
 
 #count2 {
-    margin-left: 30px;
+   margin-left: 50px;
     margin-top: 0.5cm;
 }
 
