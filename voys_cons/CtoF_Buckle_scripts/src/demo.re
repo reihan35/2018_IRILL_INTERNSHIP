@@ -54,7 +54,7 @@ module Window = {
   [@bs.get] external getvalue : it => string = "value";
 }*/
 
-[@bs.get] external getvalue : Element.elementT => float = "value";
+[@bs.get] external getvalue : Element.elementT => string = "value";
 
 module Promise = Js_promise
 
@@ -102,12 +102,30 @@ let nbr_cons = str =>
   - nbr_voys(str, 0, String.length(str))
   - nbr_space(str, 0, String.length(str));
 
-Window.alert3(nbr_voys("hello",0,(String.length("hello"))));
 
-let clicked() = /*On définit les deux fonction qui seront applée au moment de click sur le bouton : */
-    Element.setInnerHTML2(Document.getElementById("count"),getvalue(Document.getElementById("textF"))*.1.8+.32.0);
-    /*On récupère la valeur innerHTML de l'input saissi par l'utilisateur on la converti en °F puis on met la valeur converie à l'intérieur de la balise p */
 
-    /*On continue de la même facon pour le deuxième bouton  */
-let clicked2() =
+let a = Array.make(2, 0);
+let b = Array.make(1, "");
+
+let cons = Js.Promise.(
+  resolve(a[0]=nbr_cons(b[0]))
+);
+
+let voys = Js.Promise.(
+  resolve(a[1]=nbr_voys(b[0],0,String.length(b[0])))
+);
+
+
+let clicked() = 
+    Js.log("hello");
+    Js.Promise.(
+      resolve(b[0]=getvalue(Document.getElementById("textF")))
+      |> then_(() =>Js.Promise.all([|cons,voys|])
+    ))
+
+
+    /*Element.setInnerHTML2(Document.getElementById("count"),getvalue(Document.getElementById("textF"))*.1.8+.32.0);
+
+    let clicked2() =
     Element.setInnerHTML2(Document.getElementById("count2"),((getvalue(Document.getElementById("textF2"))-.32.0)/.1.8));
+    */
