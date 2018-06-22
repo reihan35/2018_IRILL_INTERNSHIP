@@ -21,6 +21,7 @@ module Element = {
   [@bs.get] external getInnerHTML2 : elementT => float = "innerHTML";
   [@bs.set] external setValue : (elementT, string) => unit = "value";
   [@bs.get] external getValue : elementT => string = "value";
+  [@bs.get] external getValue2 : elementT => float = "value";
   [@bs.send]
   external addEventListener : (elementT, string, Event.eventT => unit) => unit =
     "addEventListener";
@@ -56,7 +57,7 @@ module Window = {
 
 [@bs.get] external getvalue : Element.elementT => string = "value";
 
-module Promise = Js_promise
+/*module Promise = Js_promise
 
 
 let rec nbr_voys = (str, i, n) =>
@@ -102,8 +103,6 @@ let nbr_cons = str =>
   - nbr_voys(str, 0, String.length(str))
   - nbr_space(str, 0, String.length(str));
 
-
-
 let a = Array.make(2, 0);
 let b = Array.make(1, "");
 
@@ -115,13 +114,37 @@ let voys = Js.Promise.(
   resolve(a[1]=nbr_voys(b[0],0,String.length(b[0])))
 );
 
-
-let clicked() = 
-    Js.log("hello");
-    Js.Promise.(
+Js.Promise.(
       resolve(b[0]=getvalue(Document.getElementById("textF")))
       |> then_(() =>Js.Promise.all([|cons,voys|])
-    ))
+    ));*/
+
+
+    let a = ref(0.0);
+
+    let b = ref(0.0);
+    
+    let c = ref(0.0);    
+
+let rec puis = x =>
+    switch (x) {
+    | 0.0 => 1.0
+    | x => 2.0 *. puis(x -. 1.0)
+    };
+
+
+let perim = n =>
+  n*.2.0*.3.14
+
+let cons = Js.Promise.make((~resolve, ~reject) => resolve(. (Element.setInnerHTML2(Document.getElementById("count"),puis(a^)))));
+
+  
+let voys =  Js.Promise.make((~resolve, ~reject) => resolve(. (Element.setInnerHTML2(Document.getElementById("count2"),perim(a^)))));
+
+let clicked() = 
+  Js.Promise.make((~resolve, ~reject) =>
+  resolve(.(a := Element.getValue2(Document.getElementById("textF")))))|>Js.Promise.then_(() =>Js.Promise.all([|Js.Promise.make((~resolve, ~reject) => resolve(. (Element.setInnerHTML2(Document.getElementById("count"),puis(a^))))),Js.Promise.make((~resolve, ~reject) => resolve(. (Element.setInnerHTML2(Document.getElementById("count2"),perim(a^)))))|]));
+    
 
 
     /*Element.setInnerHTML2(Document.getElementById("count"),getvalue(Document.getElementById("textF"))*.1.8+.32.0);

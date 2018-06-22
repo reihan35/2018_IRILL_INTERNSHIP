@@ -80,6 +80,12 @@ let rec nbr_space str i n =
 	| (str, i, n) when str.[i] = ' ' || str.[i] = '*' || str.[i] = '-' || str.[i] = '+'|| str.[i] = '/'|| str.[i] = '_'-> 1 + nbr_space str (i+1) n
 	| (str, i, n) -> nbr_space str (i+1) n;;
 
+(* Deuxieme methode *)
+
+
+
+
+(* Premiere methode
 (*fonction qui renvoie le nombre de consonnes*)
 let nbr_cons str =
  ( String.length str ) - nbr_voys str 0 (String.length str) - nbr_space str 0 (String.length str) ;;
@@ -108,6 +114,6 @@ let _ =
    (*Quand on click sur le bouton la fonction enlève le noeud text dejà présent et il le met à jour avec un noeud text simple contentant la valeur convertie *)
    Js.Fragment.flush body (button "Go !" "clickme" (fun() ->(Node.remove count3 (Node.child count3 0));(Node.remove count3 (Node.child count3 0));Lwt_obrowser.run(Lwt.bind (Lwt_obrowser.yield(a.(0)<-Js.Node.get_attribute b "value")) (fun s -> (Lwt.join [( nbr_cons2 a.(0) count3) ;(nbr_voys2 a.(0) count3) ])))));
 
-(*    Js.Fragment.flush body (button "Convertis !" "clickme2" (fun() ->(Node.remove count1 (Node.child count1 0));(Node.append count1 (Node.text ((string_of_float(((float_of_string(Js.Node.get_attribute b3 "value"))-.32.0)/.1.8))^"°C"))))); *)
+(*    Js.Fragment.flush body (button "Convertis !" "clickme2" (fun() ->(Node.remove count1 (Node.child count1 0));(Node.append count1 (Node.text ((string_of_float(((float_of_string(Js.Node.get_attribute b3 "value"))-.32.0)/.1.8))^"°C"))))); *) *)
 
 
