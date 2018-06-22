@@ -1,4 +1,4 @@
-# Caml Virtual Machine in JavaScript       
+# Caml Virtual Machine in JavaScript
 # (C) 2007 Benjamin Canou (Benjamin.Canou@gmail.com)
 #
 # This program is free software: you can redistribute it and/or modify

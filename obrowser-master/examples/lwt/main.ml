@@ -35,6 +35,7 @@ let _ = Lwt_obrowser.run (fst (Lwt.wait ()))
 open Js ;;
 open JSOO ;;
 open Html;;
+open Thread;;
 
 let string_input name id value =
   let res = Js.Fragment.create () in
@@ -80,12 +81,39 @@ let rec nbr_space str i n =
 	| (str, i, n) when str.[i] = ' ' || str.[i] = '*' || str.[i] = '-' || str.[i] = '+'|| str.[i] = '/'|| str.[i] = '_'-> 1 + nbr_space str (i+1) n
 	| (str, i, n) -> nbr_space str (i+1) n;;
 
+let nbr_cons str =
+ ( String.length str ) - nbr_voys str 0 (String.length str) - nbr_space str 0 (String.length str) ;;
+
 (* Deuxieme methode *)
 
+(* Thread.create (fun (s,id) -> Node.append id (Node.text (string_of_int(nbr_cons s)^" consonnes\n"))) ("hello","") *)
+(* Thread.create (fun (s,id) -> Node.append id (Node.text (string_of_int(nbr_voys s 0 (String.length s))^" voyelles\n"))) ("hi",) *)
 
 
+let _ =
+  let body = Node.document >>> get "body" in (*On récupère le noeud correspondant à l'élément body*)
+   let (b,b2) = string_input "Tapez le mot :" "textF" (ref "Hello") in
+   Js.Fragment.flush body b2; (*On décalre l'input initialisé comme fils du noeud body*)
+   let (count3,count4) = (p "count2") in
+   Js.Fragment.flush body count4;(*On crée un noeud p et on le 'append' à body *)
+   Node.append count3 (Node.text "2 voyelles ");(*On crée un noeud text simple et on le 'append' à p *)
+   Node.append count3 (Node.text "3 consonnes");(*On crée un deuxieme noeud text simple et on le 'append' à p *)
+   let (count1,count2) = (p "count") in
+   Js.Fragment.flush body count2;
+   let a = Array.make 1 "" in (*On cree un tableau à une seule case qui contiendera la valeur de la string que l'utilisateur tape (c'est utilisé comme effet de bord) *)
+   (*Quand on click sur le bouton la fonction enlève le noeud text dejà présent et il le met à jour avec un noeud text simple contentant la valeur convertie *)
+   Js.Fragment.flush body (button "Go !" "clickme" (fun() ->
+                                                    (Node.remove count3 (Node.child count3 0));
+                                                    (Node.remove count3 (Node.child count3 0));
+                                                    a.(0)<-Js.Node.get_attribute b "value";
+                                                    let t1 = Thread.create (fun (s,id) -> Node.append id (Node.text (string_of_int(nbr_cons s)^" consonnes\n"))) (a.(0), count3) in
+                                                    let t2 = Thread.create (fun (s,id) -> Node.append id (Node.text (string_of_int(nbr_voys s 0 (String.length s))^" voyelles\n"))) (a.(0), count3 ) in
+                                                    Thread.join t1;
+                                                    Thread.join t2;
+                                                    ));
 
-(* Premiere methode
+
+(* Première methode
 (*fonction qui renvoie le nombre de consonnes*)
 let nbr_cons str =
  ( String.length str ) - nbr_voys str 0 (String.length str) - nbr_space str 0 (String.length str) ;;
