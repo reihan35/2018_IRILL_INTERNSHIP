@@ -10,8 +10,14 @@ let b = Js.Opt.get opt (fun() -> failwith "erreur")
 
 (*On récupère le dom HTML de la balise p (qui a pour id = "count")*)
 let d = Dom_html.getElementById "count"
-let d2 = Dom_html.getElementById "count2"
+let d2 = Dom_html.getElementById "count2";
 
+let box_style =
+  Js.string"background-color: red ;" in
+
+d##.style##.cssText := box_style;
+
+(*
 
 (*On initalise l'objet input (là où l'utilisateur saisie la valeure) en récupérant avec le DOM HTML l'objet qui a pour id 'textF' puis on le 'coerce' en valuer Js_of_caml*)
 
@@ -62,3 +68,4 @@ let converterC_handler =
 
 
 let ()= btn##.onclick := converterC_handler (*On declenche l'action que l'on a definie en cliquant sur le bouton en mettant ce handler dans le champs 'onclick' du bouton*)
+*)
