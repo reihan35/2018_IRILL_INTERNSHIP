@@ -1,0 +1,5 @@
+Hey guys!
+Please tell me how you installed require for javascript I've read the requirejs website and I have all tested (downloading the file(s) , adding src files to my html , downloading the file from npm etc ...)and it did not work at all and  every time I have: require is not defined :(.Please just tell me how you proceed, I really need this.
+
+
+Thank you

@@ -10,26 +10,20 @@ let b = Js.Opt.get opt (fun() -> failwith "erreur")
 
 (*On récupère le dom HTML de la balise p (qui a pour id = "count")*)
 let d = Dom_html.getElementById "count"
-let d2 = Dom_html.getElementById "count2"
+let d2 = Dom_html.getElementById "count2";
 
-(*let box_style =
+let box_style =
   Js.string"background-color: red ;" in
 
 d##.style##.cssText := box_style;
-*)
+
+(*
 
 (*On initalise l'objet input (là où l'utilisateur saisie la valeure) en récupérant avec le DOM HTML l'objet qui a pour id 'textF' puis on le 'coerce' en valuer Js_of_caml*)
 
 let input = Dom_html.getElementById "textF"
 let opt2 = Dom_html.CoerceTo.input input
 let i = Js.Opt.get opt2 (fun() -> failwith "erreur")
-
-(*fonction qui desactive un bouton*)
-let button_disable btn =
-  btn##.disabled := Js._true
-
-let button_enable btn =
-  btn##.disabled := Js._false
 
 (*fonction qui renvoie le nombre de voyelles dans une chaine de caracteres*)
 let rec nbr_voys str i n =
@@ -53,31 +47,16 @@ let nbr_cons str =
 
 (*Thread qui change la valeur de la proprieté innerHTML de l'element deg avec le nombre de consonnes de la string passée en parametre*)
 let nbr_cons2 = fun n deg->
- let r = ref 1
- in while !r < 10000000 do
-      print_int !r ;
-      print_string " " ;
-      r := !r+1
-    done ;
  (Lwt.return(deg##.innerHTML := (Js.string (string_of_int(nbr_cons n)))))
 
 
 (*Thread qui change la valeur de la proprieté innerHTML de l'element deg avec le nombre de voyelles de la string passée en parametre*)
 let nbr_voys2 = fun n deg->
-  let r = ref 1
- in while !r < 1000000 do
-      print_int !r ;
-      print_string " " ;
-      r := !r+1
-    done ;
  (Lwt.return(deg##.innerHTML := (Js.string (string_of_int(nbr_voys n 0 (String.length n))))))
-let button_enable_t b =
-  (Lwt.return(button_enable b;))
 
 (*La fontion qui prend en paramètre un objet bouton, un objet input et un objet <p> puis lance les deux thread qui affiche le nombre de voyelles et le nombre de consonnes et attend pour qu'elles se terminent*)
 let clicked i deg deg2=
-  button_disable b;
-  Lwt_main.run (Lwt.bind (Lwt.return(Js.to_string(i##.value))) (fun s -> Lwt.bind (Lwt.join [((nbr_voys2 s deg)) ; (nbr_cons2 s deg2)]) (fun() -> (button_enable_t b))))
+  Lwt_main.run (Lwt.bind (Lwt.return(Js.to_string(i##.value))) (fun s -> (Lwt.join [(nbr_voys2 s deg) ;(nbr_cons2 s deg2)])))
 
 (*Dans le champs handler du bouton on met la fonction que l'on vient de créer qui nous permet donc de définir la fonction clicked comme une action qui se declenche*)
 let converterC_handler =
@@ -89,3 +68,5 @@ let converterC_handler =
 
 
 let ()= btn##.onclick := converterC_handler (*On declenche l'action que l'on a definie en cliquant sur le bouton en mettant ce handler dans le champs 'onclick' du bouton*)
+*)
+

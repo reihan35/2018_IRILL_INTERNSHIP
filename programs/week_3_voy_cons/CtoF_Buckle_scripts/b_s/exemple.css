@@ -37,30 +37,41 @@
 }
 
 
+#clickme {
+    margin-top: 8px;
+    border-radius: 2px;
+  width: 100px;
+  padding: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+  outline: none;
+  background: #4480f9;
+  color: #FFF;
+  font-weight: 300;
+    letter-spacing: 2px;
+    margin-left: 0px;
+
+}
+#clickme:hover {
+	transition: 0.5s;
+	box-shadow: 0px 4px 10px -5px rgba(0,0,255,0.8);
+    transform: translateY(-2px);
+    background-color:orange;
+}
+
 .f{
     margin-left: 30px;
 }
 
 
-
-#nbr1 {
-    margin-left: -26px;
-    margin-top: 0.5cm;
-}
-
-#nbr2 {
-    margin-left: -26px;
-    margin-top: 0.5cm;
-}
-
-
 #count {
-    margin-left: 50px;
+    margin-left: 30px;
     margin-top: 0.5cm;
 }
 
 #count2 {
-   margin-left: 50px;
+    margin-left: 30px;
     margin-top: 0.5cm;
 }
 

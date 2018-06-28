@@ -2,7 +2,7 @@
  * http://www.ocsigen.org/lwt
  * Module Lwt_preemptive for O'Browser
  * Copyright (C) 2010 Vincent Balat
- * Laboratoire PPS - CNRS Université Paris Diderot
+ * Laboratoire PPS - CNRS Universitï¿½ Paris Diderot
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as
@@ -29,7 +29,7 @@ let (queue_add, queue_take) =
  ((fun v -> Queue.add v lwt_queue),
   (fun () -> Queue.take lwt_queue))
 
-(* only one preemptive thread is running lwt at a time 
+(* only one preemptive thread is running lwt at a time
    (but not always the same) *)
 let queue_mutex = Mutex.create ()
 let queue_not_empty = Condition.create ()
@@ -37,13 +37,13 @@ let queue_not_empty = Condition.create ()
 let detach f x =
   let res = ref None in
   let t, w = Lwt.wait () in
-  let t = (t >>= fun () -> 
+  let t = (t >>= fun () ->
              match !res with
                | Some res -> Lwt.return res
                | None -> assert false (* should never occur *))
   in
-  let _ = Thread.create 
-    (fun x -> 
+  let _ = Thread.create
+    (fun x ->
        res := Some (f x);
        Mutex.lock queue_mutex;
        (* I add the result in the queue of ready lwt promises *)
@@ -51,7 +51,7 @@ let detach f x =
 
        Condition.signal queue_not_empty;
        Mutex.unlock queue_mutex
-    ) x 
+    ) x
   in
   t
 
@@ -77,7 +77,7 @@ let yield () =
   t
 
 let rec run t =
-  let rec aux () = 
+  let rec aux () =
     match Lwt.poll t with
       | Some x ->
           Mutex.unlock queue_mutex; x
@@ -88,7 +88,7 @@ let rec run t =
   in
   Mutex.lock queue_mutex;
   try aux () with
-    | Queue.Empty -> 
+    | Queue.Empty ->
         Condition.wait queue_not_empty queue_mutex;
         Mutex.unlock queue_mutex;
         run t
