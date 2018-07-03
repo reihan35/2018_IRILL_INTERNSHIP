@@ -1,0 +1,57 @@
+<html>
+    <head>
+         <link href="exemple.css" rel="stylesheet" type="text/css"/>
+    </head>
+<body>
+
+    <div class="header">
+        <div class="header-wrapper"> 
+            <div class="logo">
+                <img src="IRILL.jpg" alt=\"bird_logo\" onclick="homepage();"/>
+            </div>
+                    
+            <div class="search-zone">
+                <h2 id="titre">Interopèrabilité JavaScript-Ocaml : une étude comparative </h2>
+            </div>
+
+            <div class="user-profile"> 
+                <img src="caml.svg" />
+
+            <div class=js-logo>
+                <img src="js.jpg" />
+            </div>
+        </div>
+    </div>  
+    <div class="butts">
+        <h3>Buckle Scripts</h3>
+        <p>Entrez le degré en en °C :</p>
+        <div class=app1>
+            <input id="textF" type="text" value="27">
+            <button id="clickme" onclick="MyApp.clicked(this);">convertis !</button>
+            <p id="count" >80.6</p>
+        </div>
+    </div>
+    <div class="butts">
+        <p>Entrez le degré en en °F :</p>
+        <div class=app1>
+            <input id="textF2" type="text" value="80.6">
+            <button id="clickme2" onclick="clicked2(this);">convertis !</button>
+            <p id="count2" >27</p>
+        </div>
+    </div>
+   <!-- <div class="f">
+        <form onsubmit="envoie(this)">
+            First name:<br>
+            <input type="text" name="firstname" value="Mickey">
+            <br>
+            Last name:<br>
+            <input type="text" name="lastname" value="Mouse">
+            <br><br>
+            <input type="submit" value="Submit">
+          </form>
+          <div id="merr"></div>
+    </div> -->
+
+    <script language="javascript" src="bundle.js"></script>
+</body>
+</html>

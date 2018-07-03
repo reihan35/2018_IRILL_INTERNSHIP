@@ -53,31 +53,28 @@ let nbr_cons str =
 
 (*Thread qui change la valeur de la proprieté innerHTML de l'element deg avec le nombre de consonnes de la string passée en parametre*)
 let nbr_cons2 = fun n deg->
- let r = ref 1
- in while !r < 10000000 do
-      print_int !r ;
-      print_string " " ;
-      r := !r+1
-    done ;
  (Lwt.return(deg##.innerHTML := (Js.string (string_of_int(nbr_cons n)))))
 
 
 (*Thread qui change la valeur de la proprieté innerHTML de l'element deg avec le nombre de voyelles de la string passée en parametre*)
 let nbr_voys2 = fun n deg->
-  let r = ref 1
- in while !r < 1000000 do
-      print_int !r ;
-      print_string " " ;
-      r := !r+1
-    done ;
  (Lwt.return(deg##.innerHTML := (Js.string (string_of_int(nbr_voys n 0 (String.length n))))))
+
 let button_enable_t b =
   (Lwt.return(button_enable b;))
 
+(*   ocamlfind ocamlc voy_cons.ml -o voy_cons.byte -linkpkg -package lwt_ppx -package js_of_ocaml -package js_of_ocaml-ppx -package lwt.unix -package thread -linkpkg *)
+
+
 (*La fontion qui prend en paramètre un objet bouton, un objet input et un objet <p> puis lance les deux thread qui affiche le nombre de voyelles et le nombre de consonnes et attend pour qu'elles se terminent*)
 let clicked i deg deg2=
+
   button_disable b;
-  Lwt_main.run (Lwt.bind (Lwt.return(Js.to_string(i##.value))) (fun s -> Lwt.bind (Lwt.join [((nbr_voys2 s deg)) ; (nbr_cons2 s deg2)]) (fun() -> (button_enable_t b))))
+(*   Lwt_js.sleep 10.0; *)
+(*   button_enable_t b *)
+(*   Lwt_main.run (Lwt.bind (Lwt.return(Js.to_string(i##.value))) (fun s -> Lwt.bind (Lwt.join [(nbr_voys2 s deg) ; (nbr_cons2 s deg2)]) (fun() -> (button_enable_t b)))) *)
+
+  Lwt_main.run (Lwt.bind (Lwt.return(Js.to_string(i##.value))) (fun s -> Lwt.bind (Lwt.join [(Lwt.bind (Lwt_js.sleep 2.0)(fun() -> (nbr_voys2 s deg))) ; (Lwt.bind (Lwt_js.sleep 3.0) (fun() ->(nbr_cons2 s deg2)))]) (fun() -> (button_enable_t b))))
 
 (*Dans le champs handler du bouton on met la fonction que l'on vient de créer qui nous permet donc de définir la fonction clicked comme une action qui se declenche*)
 let converterC_handler =

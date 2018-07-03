@@ -1,0 +1,22 @@
+{
+  "name": "hello",
+  "version": "0.1.0",
+  "scripts": {
+    "clean": "bsb -clean-world",
+    "build": "bsb -make-world",
+    "watch": "bsb -make-world -w"
+  },
+  "keywords": [
+    "BuckleScript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@glennsl/bs-jest": "git+https://github.com/glennsl/bs-jest.git",
+    "bs-platform": "^3.1.5"
+  },
+  "dependencies": {
+    "bs-lwt": "git+https://github.com/mzp/bs-lwt.git",
+    "requirejs": "^2.3.5"
+  }
+}
