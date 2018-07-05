@@ -1,0 +1,7 @@
+0.19
+0.18
+0.19
+0.19
+
+ (*print_float ((List.fold_left (fun a b -> a+.b) 0.0 (List.map (fun x -> (float_of_string x +. 1.0)) lines))/.(List.fold_left (fun a b -> a+.1.0) 0.0 (List.map (fun x -> (float_of_string x +. 1.0)) lines)))
+*)
