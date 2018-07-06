@@ -1,0 +1,6 @@
+
+> hello@0.1.0 build /home/fati/UPMC/Stage_été_2018/2018_IRILL_INTERNSHIP/programs/week_4_temps_d_exec/CtoF_Buckle_scripts_alert
+> bsb -make-world
+
+ninja: Entering directory `lib/bs'
+ninja: no work to do.
