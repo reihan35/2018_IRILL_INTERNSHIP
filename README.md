@@ -8,12 +8,12 @@ Interoperability Ocaml JavaScript: a comparative study
 
 Presque tout ce dont vous avez besoin pour faire de l'interopérabilité Ocaml-JavaScript !
 Comme vous le savez il existe trois méthodes différentes pour ce dernier :
-Js_of_ocaml, Obrowser et Buckle Script
+Js_of_ocaml, Obrowser et Buckle Script.
 Ce dépôt git vous aidera à commencer n'importe laquelle ainsi que vous donner une comparaison des trois pour vous guider à choisir celle qui vous convient le mieux. 
 
 Almost all you need to start running OCaml programs in JavaScript environment!
-As you may know there are three different methods for this goal: js_of_ocaml, Obrowser and BuckleScript
-This git repository will help you, start out any of these methods as well as giving you a comprehension between them to help you choose the one which fits your needs best.
+As you may know there are three different methods for this goal: js_of_ocaml, Obrowser and BuckleScript.
+This git repository will help you, start out any of these methods as well as giving you a comprehension between them to help you choose the one that suits you best.
 
 # Installation/Install
 
@@ -61,7 +61,7 @@ Exemples de comparaisons / Examples to compare :
 
 Dans le répertoire "programs" vous pouvez trouver des exemples qui résolvent le même problème avec les trois méthodes et vous pouvez les comparer.
 
-In the "programs" folder you can find examples wich solve the same probelem with three different methods and you can compare them.
+In the "programs" folder you can find examples wich solve the same problem with three different methods and you can compare them.
 
 # Tutorat-Comparaison / Tutorial-Comparaison
 
