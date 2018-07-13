@@ -69,7 +69,7 @@ Dans le répertoire "reports" vous pouvez trouver un bref tutorat sur le fonctio
 
 In the "reports" folder you can find a brief tutorial on these three methods and how they work also there are different reports on upsides and downsides of each method.You can also find graphs that compare their runnig speeds.
 
-# Enifn / Finnaly 
+# Enifn / Finally 
 Amusez-vous bien et faite de beaus programmes et bien sûr je vous pris de me signaler si vous voyez n'importe quels soucis.
 
 Have fun and make beautiful programs and please let me know if you find anny issues.
