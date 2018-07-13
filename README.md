@@ -12,15 +12,15 @@ Almost all you need to start running pure OCaml programs in JavaScript environme
 
 # Install
 
-###attention : Opam 1.2 devrait déjà être installé
-###attention : Opam 1.2 is required
+##attention : Opam 1.2 devrait déjà être installé
+##attention : Opam 1.2 is required
 
 ```
-git clone https://github.com/reihan35/2018_IRILL_INTERNSHIP.git
+$ git clone https://github.com/reihan35/2018_IRILL_INTERNSHIP.git
 
-cd 2018_IRILL_INTERNSHIP
+$ cd 2018_IRILL_INTERNSHIP
 
-./configure.sh
+$ ./configure.sh
 
 ```
 
