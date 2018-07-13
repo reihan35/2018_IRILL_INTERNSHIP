@@ -63,7 +63,7 @@ Dans le répertoire "programs" vous pouvez trouver des exemples qui résolvent l
 
 In the "programs" folder you can find examples wich solve the same problem with three different methods and you can compare them.
 
-# Tutorat-Comparaison / Tutorial-Comparaison
+# Tutorats-Comparaison / Tutorials-Comparaison
 
 Dans le répertoire "reports" vous pouvez trouver un bref tutorat sur le fonctionnement des trois méthodes ainsi que des rapports expliquant les différence, les points forts et faibles de chaque méthode. Vous pouvez également trouver des graphes qui comparent la vitesse d'exécution de chaque méthode.
 
