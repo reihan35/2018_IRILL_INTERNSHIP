@@ -13,7 +13,7 @@ Ce dépôt git vous aidera à commencer n'importe laquelle ainsi que vous donner
 
 Almost all you need to start running OCaml programs in JavaScript environment!
 As you may know there are three different methods for this goal: js_of_ocaml, Obrowser and BuckleScript.
-This git repository will help you, start out any of these methods as well as giving you a comprehension between them to help you choose the one that suits you best.
+This git repository will help you, start out any of these methods as well as giving you a comparison between them to help you choose the one that suits you best.
 
 # Installation/Install
 
@@ -63,7 +63,7 @@ Dans le répertoire "programs" vous pouvez trouver des exemples qui résolvent l
 
 In the "programs" folder you can find examples wich solve the same problem with three different methods and you can compare them.
 
-# Tutorat-Comparaison / Tutorial-Comparaison
+# Tutorats-Comparaison / Tutorials-Comparaison
 
 Dans le répertoire "reports" vous pouvez trouver un bref tutorat sur le fonctionnement des trois méthodes ainsi que des rapports expliquant les différence, les points forts et faibles de chaque méthode. Vous pouvez également trouver des graphes qui comparent la vitesse d'exécution de chaque méthode.
 
