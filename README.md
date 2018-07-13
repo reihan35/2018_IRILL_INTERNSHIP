@@ -69,7 +69,59 @@ Dans le répertoire "reports" vous pouvez trouver un bref tutorat sur le fonctio
 
 In the "reports" folder you can find a brief tutorial on these three methods and how they work also there are different reports on upsides and downsides of each method.You can also find graphs that compare their runnig speeds.
 
-# Enifn / Finally 
-Amusez-vous bien et faite de beaus programmes et bien sûr je vous pris de me signaler si vous voyez n'importe quels soucis.
 
-Have fun and make beautiful programs and please let me know if you find anny issues.
+# Fichiers sources / Source files 
+
+Les fichiers sources se retrouvent dans le répertoire "lib", vous pouvez donc avoir accès aux libraires. Par exemple je vous propose de faire une recherche quand vous souhaitez voir comment une fonction est utilisée par exemple :
+
+on essaye de trouver la fonction Time en Js_of_ocaml; il suffit de passer la commande suivante :
+
+Source files are in the "lib" file, thus you can have access to the librarys. For example I suggest you to search when you wish to see how a function is used for example:
+ 
+you try to find the time function in Js_of_ocaml; you can simply run the following command:
+
+```
+cd lib/js_of_ocaml/lib
+$grep time *.ml
+
+```
+On aura :
+
+You'll have : 
+
+```
+dom_html.ml:  let timeupdate = Dom.Event.make "timeupdate"
+dom_html.ml:class type timeRanges = object
+dom_html.ml:  method buffered : timeRanges t readonly_prop
+dom_html.ml:  method played : timeRanges t readonly_prop
+dom_html.ml:  method seekable : timeRanges t readonly_prop
+dom_html.ml:type timeout_id
+dom_html.ml:  method setTimeout : (unit -> unit) Js.callback -> float -> timeout_id meth
+dom_html.ml:  method clearTimeout : timeout_id -> unit meth
+dom_html.ml:type timeout_id_safe = timeout_id option ref
+dom_html.ml:let setTimeout callback d : timeout_id_safe =
+dom_html.ml:let clearTimeout (id : timeout_id_safe) =
+firebug.ml:  method time : js_string t -> unit meth
+firebug.ml:  method timeEnd : js_string t -> unit meth
+geolocation.ml:  method timestamp : Js.date Js.readonly_prop
+geolocation.ml:  method timeout : int Js.writeonly_prop
+intl.ml:    method timeZone : Js.js_string Js.t Js.readonly_prop
+intl.ml:    method timeZoneName : Js.js_string Js.t Js.optdef_prop
+intl.ml:    method timeZone : Js.js_string Js.t Js.optdef Js.prop
+intl.ml:    method timeZoneName : Js.js_string Js.t Js.optdef Js.prop
+intl.ml:      val mutable timeZone = Js.undefined
+intl.ml:      val mutable timeZoneName = Js.undefined
+xmlHttpRequest.ml:  method ontimeout : ('self t, 'self File.progressEvent t) Dom.event_listener writeonly_prop
+xmlHttpRequest.ml:  let timeout = Dom.Event.make "timeout"
+
+```
+
+et donc on pourra retrouver la fonction dont on a besoin en ouvrant le fichier.
+
+And so you can find the right function by opening the right file.
+
+
+# Enifn / Finally 
+Amusez-vous bien et faite de beaux programmes et bien sûr je vous pris de me signaler si vous voyez n'importe quels soucis.
+
+Have fun and make beautiful programs and please let me know if you find any issues.
