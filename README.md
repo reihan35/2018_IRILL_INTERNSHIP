@@ -2,6 +2,8 @@
 
 Interoperabilité Ocaml javaScript : une étude comparative
 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 Interoperability Ocaml JavaScript: a comparative study
 
 # Description
@@ -12,7 +14,9 @@ Comme vous le savez il existe trois méthodes différentes pour ce dernier :
 Js_of_ocaml, Obrowser et Buckle Script.
 
 
-Ce dépôt git vous aidera à commencer n'importe laquelle ainsi que vous donner une comparaison des trois pour vous guider à choisir celle qui vous convient le mieux. 
+Ce dépôt git vous aidera à commencer n'importe laquelle ainsi que vous donner une comparaison des trois pour vous guider à choisir celle qui vous convient le mieux.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
 Almost all you need to start running OCaml programs in JavaScript environment!
 As you may know there are three different methods for this:
@@ -66,6 +70,7 @@ lib > obrowser-master > examples
 BuckleScript :
 
 Pas d'exemples BuckleScript fournis avec le dépôt original. 
+
 No examples in the original repository.
 
 Exemples de comparaisons / Examples to compare : 
@@ -77,6 +82,8 @@ In the "programs" folder you can find examples that solve the same problem with 
 # Tutorats-Comparaison / Tutorials-Comparaison
 
 Dans le répertoire "reports" vous pouvez trouver un bref tutorat sur le fonctionnement des trois méthodes ainsi que des explications sur les points forts et faibles de chaque méthode. Vous pouvez également trouver des graphes qui comparent la vitesse de compilation/ exécution de chaque méthode.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 In the "reports" folder you can find a brief tutorial on these three methods and how they work , as well as their upsides and downsides.You can also find graphs that compare their compile/running speeds.
 
@@ -123,6 +130,8 @@ xmlHttpRequest.ml:  let timeout = Dom.Event.make "timeout"
 
 ```
 Et donc on pourra retrouver la fonction dont on a besoin tout en ayant des informations précieuses sur elle.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Source files are in the "lib" file, thus you can have access to the librarys.when you need to find a function I suggest you to search in this folder.
 
@@ -171,5 +180,7 @@ And so you can find the function and have helpful inforamtion on it.
 
 # Enifn / Finally 
 Amusez-vous bien et faites de beaux programmes et bien sûr je vous pris de me signaler si vous voyez n'importe quels soucis.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Have fun and make beautiful programs and please let me know if you find any issues.
