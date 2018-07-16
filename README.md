@@ -1,10 +1,10 @@
 # 2018_IRILL_INTERNSHIP
 
-Interoperabilité Ocaml javaScript : une étude comparative
+interopérabilité Ocaml javaScript : une étude comparative
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Interoperability Ocaml JavaScript: a comparative study
+Ocaml and JavaScript Interoperability : a comparative study
 
 # Description
 
