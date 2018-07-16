@@ -1,7 +1,0 @@
-# ninja log v5
-0	13	0	src/main_entry.mlast	6f94f4a0d38a0f9c
-13	17	0	src/main_entry.mlast.d	569f87060574c6ab
-0	19	0	src/fib.mlast	7a57c4eeb7c52ef1
-19	21	0	src/fib.mlast.d	ca16773a9bc8e729
-0	5	0	src/main_entry.mlast	6f94f4a0d38a0f9c
-5	7	0	src/main_entry.mlast.d	569f87060574c6ab
