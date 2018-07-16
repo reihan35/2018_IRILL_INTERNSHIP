@@ -99,7 +99,6 @@ On essaye de trouver la fonction "time()" en Js_of_ocaml; il suffit de passer la
 ```
 cd lib/js_of_ocaml/lib
 $grep time *.ml
-
 ```
 On aura :
 
@@ -127,7 +126,6 @@ intl.ml:      val mutable timeZone = Js.undefined
 intl.ml:      val mutable timeZoneName = Js.undefined
 xmlHttpRequest.ml:  method ontimeout : ('self t, 'self File.progressEvent t) Dom.event_listener writeonly_prop
 xmlHttpRequest.ml:  let timeout = Dom.Event.make "timeout"
-
 ```
 Et donc on pourra retrouver la fonction dont on a besoin tout en ayant des informations précieuses sur elle.
 
@@ -143,7 +141,6 @@ You are looking for the "time()" function in Js_of_ocaml; you can simply run the
 ```
 cd lib/js_of_ocaml/lib
 $grep time *.ml
-
 ```
 
 You'll have : 
@@ -172,7 +169,6 @@ intl.ml:      val mutable timeZone = Js.undefined
 intl.ml:      val mutable timeZoneName = Js.undefined
 xmlHttpRequest.ml:  method ontimeout : ('self t, 'self File.progressEvent t) Dom.event_listener writeonly_prop
 xmlHttpRequest.ml:  let timeout = Dom.Event.make "timeout"
-
 ```
 
 And so you can find the function and have helpful inforamtion on it.
@@ -181,6 +177,6 @@ And so you can find the function and have helpful inforamtion on it.
 # Enifn / Finally 
 Amusez-vous bien et faites de beaux programmes et bien sûr je vous pris de me signaler si vous voyez n'importe quels soucis.
 
-++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Have fun and make beautiful programs and please let me know if you find any issues.
