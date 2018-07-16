@@ -22,11 +22,11 @@ js_of_ocaml, Obrowser and BuckleScript.
 
 This git repository will help you start out any of these methods as well as giving you a comparison between them to help you choose the one that suits you best.
 
-# Installation/Install
+# Installation / Install
 
-Attention : Opam 1.2 devrait être installé
+Attention !! Opam 1.2 devrait être installé.
 
-Attention : Opam 1.2 is required
+Attention !! Opam 1.2 is required.
 
 ```
 $ git clone https://github.com/reihan35/2018_IRILL_INTERNSHIP.git
@@ -78,7 +78,7 @@ In the "programs" folder you can find examples that solve the same problem with 
 
 Dans le répertoire "reports" vous pouvez trouver un bref tutorat sur le fonctionnement des trois méthodes ainsi que des explications sur les points forts et faibles de chaque méthode. Vous pouvez également trouver des graphes qui comparent la vitesse de compilation/ exécution de chaque méthode.
 
-In the "reports" folder you can find a brief tutorial on these three methods and how they work , as well as their upsides and downsides.You can also find graphs that compare their compile/runnig speeds.
+In the "reports" folder you can find a brief tutorial on these three methods and how they work , as well as their upsides and downsides.You can also find graphs that compare their compile/running speeds.
 
 
 # Fichiers sources / Source files 
